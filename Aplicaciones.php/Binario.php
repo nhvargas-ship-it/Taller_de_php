@@ -1,3 +1,4 @@
+
 <?php
 class Conversor {
     public static function binario($n){return decbin($n);}    
@@ -12,5 +13,6 @@ class Conversor {
 <?php
 if ($_POST) echo Conversor::binario($_POST['num']);
 ?>
+
 <br>
 <button type="button" onclick="window.location.href='/Taller_de_php'">Volver al menú</button>

@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 class Calculadora {
@@ -51,6 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 foreach($_SESSION['hist'] as $h) echo "<p>$h</p>";
 ?>
+
 
 <form method="POST"><button name="clear">Borrar historial</button></form>
 <button type="button" onclick="window.location.href='/Taller_de_php'">Volver al menú</button>

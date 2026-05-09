@@ -1,3 +1,4 @@
+
 <?php
 class Utilidades {
     public static function limpiarTexto($texto) {
@@ -30,5 +31,6 @@ if ($_POST) {
     echo Acronimo::generar($_POST['frase']);
 }
 ?>
+
 <br>
 <button type="button" onclick="window.location.href='/Taller_de_php'">Volver al menú</button>

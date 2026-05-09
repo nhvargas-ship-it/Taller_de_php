@@ -1,3 +1,4 @@
+
 <?php
 class Conjuntos{
     public static function union($a,$b){return array_unique(array_merge($a,$b));}
@@ -33,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $a = explode(',', str_replace(' ', '', $a));
     $b = explode(',', str_replace(' ', '', $b));
 
-    $res = []; // 🔴 Inicialización obligatoria
+    $res = [];
 
     switch($op) {
         case 'union':
@@ -65,5 +66,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "<p>Resultado: {" . implode(',', $res) . "}</p>";
 }
 ?>
+
 <br>
 <button type="button" onclick="window.location.href='/Taller_de_php'">Volver al Menu</button>

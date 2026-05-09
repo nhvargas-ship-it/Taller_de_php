@@ -1,3 +1,4 @@
+
 <?php
 class Estadistica {
     public static function promedio($arr) {
@@ -22,5 +23,6 @@ if ($_POST) {
     echo " Moda: ".Estadistica::moda($arr);
 }
 ?>
+
 <br>
 <button type="button" onclick="window.location.href='/Taller_de_php'">Volver al menú</button>
